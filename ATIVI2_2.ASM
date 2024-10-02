@@ -41,8 +41,8 @@ Main proc
     ADD BL,30h
 
     MOV AH,2
-    MOV DL,BL
     int 21h
+    MOV DL,BL
     ;IMPRIME CARACTERE
 
     MOV AH,4ch
