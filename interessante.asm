@@ -36,7 +36,7 @@ REPETE:
     INC DL
     CMP CL,0
     JE FIM
-    INT 21H
+    INT 21h
     DEC CL 
     JMP REPETE
 
