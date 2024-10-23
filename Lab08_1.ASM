@@ -1,0 +1,32 @@
+Title Atividade
+.model small
+.data
+  MSG1 DB "Digite um Número: $"
+.CODE
+Main PROC
+MOV AX,@DATA
+MOV DS,AX
+
+MOV AH,09
+LEA DX,MSG1
+INT 21h
+
+XOR BX,BX
+MOV CX,16
+MOV AH,01
+REPETE:
+INT 21h
+AND AL,0FH
+CMP AL,13
+JE FIM
+SHL BX,1
+ADD BL,AL
+DEC CX
+JMP REPETE
+
+FIM:
+    MOV AH,4ch
+    INT 21h
+ENDP
+END MAIN
+
