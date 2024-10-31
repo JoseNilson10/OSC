@@ -2,8 +2,8 @@
 .stack 100h
 .DATA
     MATRIZ DB 4*4 DUP(?)
-    MSG1 DB "Digite os valores que deseja na Matriz: $"
-    MSG2 DB 13,10,"Sua Matriz eh: $"
+    MSG1 DB 'Digite os valores que deseja na Matriz:', 10,13, '$'
+    MSG2 DB 'Sua Matriz eh: ',10,13,'$'
     MSG3 DB "A soma da matriz eh: $"
     MSG4 DB 13,10, "$"
 
