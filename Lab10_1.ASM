@@ -1,20 +1,4 @@
 
-;PROJETO DO JOGO BATALHA NAVAL
-;DESENVOLVIDO POR: 
-;       -> PEDRO NINCI | RA:24001613
-;       -> JULIO MOURA | RA:2
-;DISCIPLINA : OCLM 2020 - TURMA 01
-;PROFESSOR: RICARDO PANNAIN
-
-;OBSERVACOES:
-; -> Foram feitas divisorias (------ ou =====)ao longo do programa, para uma melhor organizacao
-; -> O Codigo foi identado para melhor organizacao e visualizacao
-; -> Caso o tiro foi um acerto aperecera um X caso contrario ~ (?gua).
-
-TITLE PROJETO BATALHA NAVAL
-
-.MODEL SMALL
-    MOVE_Y MACRO N              ;Macro feita para realizar movimentacao no eixo y da tela de saida.
         PUSH AX
         PUSH BX
         PUSH CX
